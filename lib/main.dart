@@ -50,7 +50,12 @@ class _State extends State<MyApp> {
                 RotatedBox(
                   quarterTurns: _turns,
                   child: const Text('Hello World'),
-                )
+                ),
+                Container(
+                    padding: const EdgeInsets.all(50.0),
+                    decoration: const BoxDecoration(
+                        gradient: RadialGradient(
+                            colors: <Color>[Colors.red, Colors.yellow]))),
               ],
             ),
           )),
